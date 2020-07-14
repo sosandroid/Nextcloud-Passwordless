@@ -14,11 +14,11 @@ Mon instance de test est démarrée avec le fichier [docker-compose.yaml](./dock
 
 ### Authentification WebAuthn / Fido2
 
-Nous avons utilisé une clef [Token2 T2F2 ALU](https://www.token2.com/shop/product/token2-t2f2-alu-fido2-u2f-and-totp-security-key) pour ce test. Elle nous a paru un excelent rapport qualité prix même si elle n'est pas open-source.
+Nous avons utilisé une clef [Token2 T2F2 ALU](https://www.token2.com/shop/product/token2-t2f2-alu-fido2-u2f-and-totp-security-key) pour ce test. Elle nous a paru un excellent rapport qualité prix même si elle n'est pas open-source.
 
 #### Paramétrage de la clef
 Vous aurez besoin de la [Companion App](https://www.token2.com/site/page/tools-for-programmable-tokens) pour paramétrer votre code PIN. Elle est disponible pour Windows et iOS (version NFC).  
-Laissez le temps à votre ordinateur de trouver la clef et d'installr ses pilotes (Windows)
+Laissez le temps à votre ordinateur de trouver la clef et d'installer ses pilotes (Windows)
 
 ![Companion](./res/companion.png)
 
@@ -93,7 +93,6 @@ Configurer votre code PIN `1234` par exemple.
 | 19.0.0.12 | Windows 10 | Edge | 83.0 | Réussite |
 | 19.0.0.12 | Windows 10 | Vivaldi | 83.0 | Réussite |
 | 19.0.0.12 | MacOS 10.15.5 | Firefox | 78.0 | Réussite |
-| 19.0.0.12 | MacOS 10.15.5 | Safari | 13.1.1 | Réussite |
 | 19.0.0.12 | MacOS 10.15.5 | Safari | 13.1.1 | Réussite |
 | 19.0.0.12 | MacOS 10.15.5 | Chrome | 83.0 | Réussite |
 
