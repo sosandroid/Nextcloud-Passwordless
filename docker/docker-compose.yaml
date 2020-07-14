@@ -1,0 +1,56 @@
+version: '3.7'
+services:
+  database_nc:
+    image: mariadb:10
+    command: --transaction-isolation=READ-COMMITTED --binlog-format=ROW
+    restart: unless-stopped
+    environment:
+      MYSQL_RANDOM_ROOT_PASSWORD: 'yes'
+      MYSQL_USER_FILE: '/run/secrets/mysql-user'
+      MYSQL_DATABASE_FILE: '/run/secrets/mysql-database'
+      MYSQL_PASSWORD_FILE: '/run/secrets/mysql-password'
+    secrets:
+      - mysql-user
+      - mysql-database
+      - mysql-password
+    networks:
+      - lan 
+    volumes: 
+      - ./db:/var/lib/mysql
+
+  nextcloud:
+    depends_on:
+      - database_nc
+    image: nextcloud:latest
+    restart: unless-stopped
+    environment:
+      MYSQL_HOST: 'database_nc'
+      MYSQL_DATABASE_FILE: '/run/secrets/mysql-database'
+      MYSQL_USER_FILE: '/run/secrets/mysql-user'
+      MYSQL_PASSWORD_FILE: '/run/secrets/mysql-password'
+      NEXTCLOUD_ADMIN_PASSWORD: ${NEXTCLOUD_ADMIN_PASSWORD}
+      NEXTCLOUD_ADMIN_USER: ${NEXTCLOUD_ADMIN_USER}
+      NEXTCLOUD_TRUSTED_DOMAINS: ${NEXTCLOUD_URL}
+    ports: 
+      - 8081:80
+    secrets:
+      - mysql-user
+      - mysql-database
+      - mysql-password
+    networks:
+      - lan
+    volumes:
+      - ./html:/var/www/html
+
+networks:
+  lan:
+
+secrets:
+  mysql-user:
+    file: ./secrets/mysql-user.txt
+
+  mysql-database:
+    file: ./secrets/mysql-database.txt
+
+  mysql-password:
+    file: ./secrets/mysql-password.txt
