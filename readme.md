@@ -47,7 +47,7 @@ Configurer votre code PIN `1234` par exemple.
 
 7. Il vous reste à donner un nom à la clef juste ajoutée.
 
-![webauthn]-3(./res/step-4.png)
+![webauthn-3](./res/step-4.png)
 
 8. Vous voilà prêt
 
