@@ -84,7 +84,7 @@ Configurer votre code PIN `1234` par exemple.
 | 19.0.0.12 | Windows 10 | Edge | 83.0 | Réussite |
 | 19.0.0.12 | Windows 10 | Vivaldi | 83.0 | Réussite |
 
-### Pour l'authetification
+### Pour l'authentification
 
 | Nextcloud | Système | Navigateur | Version | Résultat |
 | --------- | ---------- | ------- | ------- | --------- |
@@ -92,12 +92,16 @@ Configurer votre code PIN `1234` par exemple.
 | 19.0.0.12 | Windows 10 | Chrome | 83.0 | Réussite |
 | 19.0.0.12 | Windows 10 | Edge | 83.0 | Réussite |
 | 19.0.0.12 | Windows 10 | Vivaldi | 83.0 | Réussite |
+| 19.0.0.12 | MacOS 10.15.5 | Firefox | 78.0 | Réussite |
+| 19.0.0.12 | MacOS 10.15.5 | Safari | 13.1.1 | Réussite |
+| 19.0.0.12 | MacOS 10.15.5 | Safari | 13.1.1 | Réussite |
+| 19.0.0.12 | MacOS 10.15.5 | Chrome | 83.0 | Réussite |
 
 ## Point d'attention
 
 1. Sur Nextcloud, l'authentification par mot de passe reste active. L'authentification WebAuthn est donc un confort. Il faut donc que votre mot de passe soit conforme aux normes de sécurité. Utilisez un gestionnaire de mot de passe, ce sera plus facile.
 2. Le corolaire est qu'en cas de perte de votre clef, vous n'êtes pas bloqué.
 3. Lorsque la session a expiré, ou pour changer un paramètre sur votre compte, c'est le mot de passe qui est demandé.
-4. Le choix de Nextcloud, dans son implémentation est de demander le code PIN à chaque fois. C'est inutile à mon sens. Néanmoins, le désagrément est faible.
+4. Lors de l'authentification, certains couples OS / Navigateur demandent le code PIN, d'autres non. C'est normal.
 
 
