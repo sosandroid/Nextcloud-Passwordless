@@ -92,6 +92,7 @@ Configurer votre code PIN `1234` par exemple.
 | 19.0.0.12 | Windows 10 | Chrome | 83.0 | Réussite |
 | 19.0.0.12 | Windows 10 | Edge | 83.0 | Réussite |
 | 19.0.0.12 | Windows 10 | Vivaldi | 3.1.1929.45 | Réussite |
+| 19.0.0.12 | Windows 7 | Firefox | 68.4.1 ESR | Réussite |
 | 19.0.0.12 | MacOS 10.15.5 | Firefox | 78.0 | Réussite |
 | 19.0.0.12 | MacOS 10.15.5 | Safari | 13.1.1 | Réussite |
 | 19.0.0.12 | MacOS 10.15.5 | Chrome | 83.0 | Réussite |
