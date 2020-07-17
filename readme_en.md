@@ -33,26 +33,22 @@ set your PIN code. `1234` for instance.
 ![settings](./res/en/step-0.png)
 
 3. Navigate to _Security_
-4. Sart addind a WebAuthn device
+4. Sart adding a WebAuthn device
 
-![webauthn-0](./res/en/step-1.png)
+![webauthn-1](./res/en/step-1.png)
 
 5. A pop-up ask you for the PIN code
 
-![webauthn-1](./res/en/step-2.png)
+![webauthn-2](./res/en/step-2.png)
 
 6. Press the key button to enroll it
-
-![webauthn-2](./res/en/step-3.png)
-
 7. Give the key a cool name
 
-![webauthn-3](./res/en/step-4.png)
+![webauthn-3](./res/en/step-3.png)
 
 8. You're set
 
-![webauthn-4](./res/en/step-5.png)
-
+![webauthn-4](./res/en/step-4.png)
 
 #### 1st authentication
 
@@ -76,7 +72,7 @@ set your PIN code. `1234` for instance.
 
 6. You're in
 
-## Tested Browsers
+## Tested System & Browsers
 
 ### Fido2 key enrollment
 
@@ -99,10 +95,10 @@ set your PIN code. `1234` for instance.
 | 19.0.0.12 | MacOS 10.15.5 | Safari | 13.1.1 | Success |
 | 19.0.0.12 | MacOS 10.15.5 | Chrome | 83.0 | Success |
 
-## Foot notes
+## Footnotes
 
-1. On nextcloud the login / password authentication remains active. You must then choose a strong password as per common security rules.
-2. The consequence is you cannot be locked out by loosing your USB key
+1. On Nextcloud the login / password authentication remains active. You must then choose a strong password as per common security rules. Think about using a good Password manager such as [Bitwarden_RS](https://github.com/sosandroid/docker-bitwarden_rs-caddy-synology)
+2. The consequence is you cannot be locked out by loosing your USB key. The WebAuthn feature is then a daily convenience, not enough security.
 3. When session expires or when changing some settings on your account the password is requested.
 4. While authenticating, depending on the OS / Browser the PIN code can be requested or not. This is normal behavior
 
